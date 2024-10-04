@@ -51,8 +51,9 @@ public class GameLogic {
      * @return the next guess
      */
     public int guessHigher() {
-        
-        return 0;
+        left = guess;
+        guess = (left + right) / 2;
+        return guess;
     }
 
     /**
@@ -62,8 +63,9 @@ public class GameLogic {
      * @return the new guess
      */
     public int guessLower() {
-        
-        return 0;
+        right = guess;
+        guess = (left + right) / 2;
+        return guess;
     }
 
     /**
@@ -72,8 +74,7 @@ public class GameLogic {
      * @return the correct guess
      */
     public int guessCorrect() {
-
-        return 0;
+        return guess;
     }
 
     /**

@@ -1,4 +1,2 @@
-0 thumbsdown
-1 thumbsup
-2 stop
-3 neutral
+0 Up Arrow
+1 Down Arrow
