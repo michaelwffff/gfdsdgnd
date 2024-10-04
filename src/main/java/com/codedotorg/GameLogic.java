@@ -39,7 +39,9 @@ public class GameLogic {
      * @return true if the user's guess is "stop", false otherwise
      */
     public boolean isGuessCorrect(String predictedClass) {
-        
+        if (predictedClass.equals("stop")) {
+            return true;
+        }
         return false;
     }
 
