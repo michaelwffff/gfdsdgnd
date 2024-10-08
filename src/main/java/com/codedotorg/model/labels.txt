@@ -1,2 +1,3 @@
 0 Up Arrow
 1 Down Arrow
+2 Stop
