@@ -28,11 +28,12 @@ public class GameLogic {
      * @return an integer representing the next guess to make (-1 if the user's response is invalid)
      */
     public int binarySearch(String predictedClass) {
-        if(predictedClass.equals("Up Arrow"))
+        System.out.println(predictedClass);
+        if(predictedClass.equals("0 Up Arrow"))
             return guessHigher();
-        else if(predictedClass.equals("Down Arrow"))
+        else if(predictedClass.equals("1 Down Arrow"))
             return guessLower();
-        else if(predictedClass.equals("Stop"))
+        else if(predictedClass.equals("2 Stop"))
             return guessCorrect();
         else
             return -1;
@@ -45,7 +46,7 @@ public class GameLogic {
      * @return true if the user's guess is "stop", false otherwise
      */
     public boolean isGuessCorrect(String predictedClass) {
-        if(predictedClass.equals("Stop"))
+        if(predictedClass.equals("2 Stop"))
             return true;
         return false;
     }
