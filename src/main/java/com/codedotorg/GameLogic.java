@@ -70,8 +70,9 @@ public class GameLogic {
      * @return the new guess
      */
     public int guessLower() {
-        
-        return 0;
+        right = guess;
+        guess = (left + right) / 2;
+        return guess;
     }
 
     /**
